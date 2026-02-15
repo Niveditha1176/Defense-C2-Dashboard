@@ -2,17 +2,15 @@
 
 A centralized threat monitoring and access intelligence platform built with Streamlit. The DS-C2 Dashboard provides real-time surveillance event analysis, access log monitoring, and threat classification for security operations centers.
 
-## 📋 Features
+##  Features
 
 - **Real-time Event Monitoring**: Track motion detection, loitering, and directional violations across multiple zones
 - **Event Severity Classification**: Automatic threat level assessment (HIGH, MEDIUM, LOW) based on event type and location
 - **Multi-source Log Integration**: Consolidate data from IVA (Intelligent Video Analytics) logs and access control systems
 - **Interactive Filtering**: Filter events by type and zone for targeted analysis
-- **Dark-themed UI**: Purpose-built dashboard interface optimized for 24/7 monitoring
-- **Auto-refresh Capability**: Configurable automatic data refresh for continuous surveillance
-- **Plotly Visualizations**: Interactive charts and graphs for threat pattern analysis
+- **Plotly Visualisations**: Interactive charts and graphs for threat pattern analysis
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -55,12 +53,12 @@ C2-Dashboard/
 └── requirements.txt       # Python dependencies
 ```
 
-## 📊 Data Format
+##  Data Format
 
 ### IVA Logs (iva_logs.csv)
 Expected columns:
 - `event_type` - Type of event (Motion, Loitering, Wrong Direction, etc.)
-- `zone` - Security zone where event occurred
+- `zone` - Security zone where the event occurred
 - `timestamp` - When the event was detected
 - Additional context fields as needed
 
@@ -77,49 +75,27 @@ Expected format:
 ]
 ```
 
-## 🎨 Customization
 
-### Severity Classification
-Modify the `classify_severity()` function in `main.py` to adjust threat level criteria:
-- HIGH severity: Loitering in restricted zones (Gate B, Zone C)
-- MEDIUM severity: Wrong Direction violations
-- LOW severity: General motion detection
 
-### Dashboard Styling
-The dashboard uses CSS custom properties for theming. Edit the style section in `main.py` to customize colors and appearance.
-
-### Refresh Interval
-Configure the auto-refresh interval in the sidebar (default: 30 seconds).
-
-## 🔧 Dependencies
+##  Dependencies
 
 - **streamlit** - Web application framework
 - **pandas** - Data manipulation and analysis
 - **plotly** - Interactive visualizations
 - **python-dateutil** - Date/time utilities
 
-See `requirements.txt` for complete dependency list.
+See `requirements.txt` for the complete dependency list.
 
-## 📈 Usage Examples
+## Usage Examples
 
 1. **Monitor Current Threats**: View real-time HIGH severity events in the main dashboard
 2. **Historical Analysis**: Filter events by date range and zone to identify patterns
 3. **Access Intelligence**: Review access logs to correlate with surveillance events
 4. **System Status**: Check system time and event counts in the sidebar
 
-## 🔒 Security Considerations
 
-- Deploy behind secure authentication layer for production use
-- Restrict access to authorized security personnel only
-- Use HTTPS for all connections
-- Implement proper data retention policies
-- Regularly audit access logs
 
-## 📝 Logging
-
-The dashboard logs all activity to `system.log`. Check this file for debugging and audit trails.
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Issue**: "IVA logs file not found"
 - Solution: Ensure `iva_logs.csv` exists in the project directory
@@ -130,19 +106,9 @@ The dashboard logs all activity to `system.log`. Check this file for debugging a
 **Issue**: Dashboard not refreshing
 - Solution: Click "Refresh Now" button or restart the application
 
-## 📄 License
-
-[Add your license here]
-
-## 👥 Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues.
-
-## 📞 Support
-
-For issues, questions, or feature requests, please contact the development team or open an issue in the repository.
-
+##  License
+- MIT license
 ---
 
-**Last Updated**: February 2026  
 **Version**: 1.0.0
+
