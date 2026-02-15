@@ -1,0 +1,7 @@
+timestamp,event_type,zone,severity
+2025-03-01 10:02:11,Motion,Gate A,Low
+2025-03-01 10:03:55,Loitering,Gate B,High
+2025-03-01 10:05:33,Wrong Direction,Gate A,Medium
+2025-03-01 10:08:10,Motion,Zone C,Low
+2025-03-01 10:10:45,Loitering,Zone C,High
+2025-03-01 10:20:36,Wrong Direction,Gate A,High
